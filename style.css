@@ -302,6 +302,9 @@ footer {
         height: 130px;
         width: 130px;
     }
+    #part {
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 790px) {
@@ -325,9 +328,16 @@ footer {
     .tips h4 {
         font-size: 0.9em;
     }
+    #newsletter {
+        width: 140px;
+        margin-top: 40px;
+    }
+    #newsletter h4 {
+        padding: 30px 0;
+    }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 350px) {
     .elements {
         padding: 15px 0;
         text-align: center;
@@ -337,5 +347,9 @@ footer {
     }
     nav {
         display: none !important;
+    }
+    #newsletter {
+        width: 100px;
+        margin-top: 20px;
     }
 }
