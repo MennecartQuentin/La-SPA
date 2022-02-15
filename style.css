@@ -24,18 +24,9 @@ footer {
     padding-right: 45px;
 }
 
-header {
-    background: url(./media/spa.png)no-repeat 50% 50%;
-    background-size: cover;
-    height: 100vh;
-    border-radius: 0px 0px 20px 20px;
-    margin-bottom: 40px;
-}
-
 h1 {
     font-size: 5em;
     padding: 200px 0 0 20px;
-    text-shadow: -3px 3px 2px rgb(86, 86, 241);
     color: orange;
     animation: titre ease 3.5s;
 }
@@ -43,7 +34,7 @@ h1 {
 @keyframes titre {
     0% {
         opacity: 0;
-        transform: translateY(180px);
+        transform: translateY(80px);
     }
     100% {
         opacity: 1;
@@ -55,7 +46,7 @@ h1 {
 /* ****************************** LEFT PART ************************** */
 
 #leftPart {
-    background-color: rgb(105, 176, 243);
+    background-color: rgb(177, 211, 243);
     border-radius: 20px;
     padding: 25px;
 }
@@ -67,6 +58,7 @@ h1 {
 .elements img {
     border-radius: 50%;
     width: 200px;
+    height: 250px;
     padding: 50px 0 50px 0;
 }
 
@@ -88,24 +80,24 @@ h1 {
 /* **************************** RIGHT PART **************************** */
 
 #rightPart {
-    background-color: rgb(247, 194, 97);
+    background-color: rgb(238, 250, 255);
     border-radius: 20px;
     padding: 20px;
 }
 
 .tips {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     margin: 20px auto;
     border-radius: 30px;
 }
 
 .tips h4 {
     position: relative;
-    color: rgb(222, 230, 124);
+    color: rgb(255, 255, 255);
     top: 50%;
     transform: translateY(-30%);
-    text-shadow: 1px 1px 0 rgb(252, 143, 0);
+    text-shadow: 1px 1px 0 rgb(0, 0, 0);
     animation: titreh4 ease 2.5s;
 }
 
@@ -231,7 +223,7 @@ h1 {
 /* ****************************** FOOTER *************************** */
 
 footer {
-    background-color: rgb(105, 176, 243);
+    background-color: #17a2b8;
     padding: 15px 0 4px 0;
 }
 
@@ -291,20 +283,47 @@ footer {
 
 /* ************************ MEDIA QUERIES ************************** */
 
-@media screen and (max-width: 990px) {
+@media screen and (min-width: 600px) {
     #rightPart {
         display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
     #rightPart h2 {
         display: none;
     }
+    .tips h4 {
+        font-size: 1em;
+    }
     .tips {
-        height: 130px;
-        width: 130px;
+        height: 20vw;
+        width: 20vw;
+    }
+    #part {
+        display: flex;
+    }
+    .elements p {
+        font-size: 1em;
+        text-align: justify;
+    }
+    .elements img {
+        max-width: 150px;
+        margin-top: 10px;
+    }
+    #newsletter h4 {
+        padding: 50px 0;
+        font-size: 2em;
     }
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (min-width: 800px) {
+    #rightPart {
+        display: flex;
+        flex-direction: row;
+    }
+    #rightPart h2 {
+        display: none;
+    }
     h1 {
         font-size: 3em;
     }
@@ -312,8 +331,8 @@ footer {
         padding: 30px 0;
     }
     .elements img {
-        max-width: 140px;
-        margin-top: 40px;
+        max-width: 200px;
+        margin-top: 10px;
     }
     #transition img {
         width: 250px;
@@ -325,17 +344,41 @@ footer {
     .tips h4 {
         font-size: 0.9em;
     }
+    #newsletter {
+        width: 140px;
+        margin-top: 40px;
+    }
+    #newsletter h4 {
+        padding: 30px 0;
+        font-size: 1.5em;
+    }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (min-width: 1200px) {
+    #rightPart {
+        display: flex;
+        flex-direction: column;
+    }
+    .tips {
+        width: 10em;
+        height: 10em;
+        flex-direction: column;
+    }
+    #rightPart h2 {
+        display: none;
+    }
     .elements {
         padding: 15px 0;
-        text-align: center;
     }
     .elements img {
         margin-bottom: 10px;
     }
-    nav {
-        display: none !important;
+    #newsletter {
+        width: 100%;
+        margin-top: 60px;
+    }
+    #newsletter h4 {
+        padding: 50px 0;
+        font-size: 2em;
     }
 }
