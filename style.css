@@ -314,6 +314,9 @@ footer {
         padding: 50px 0;
         font-size: 2em;
     }
+    #part {
+        display: flex;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -367,18 +370,3 @@ footer {
     #rightPart h2 {
         display: none;
     }
-    .elements {
-        padding: 15px 0;
-    }
-    .elements img {
-        margin-bottom: 10px;
-    }
-    #newsletter {
-        width: 100%;
-        margin-top: 60px;
-    }
-    #newsletter h4 {
-        padding: 50px 0;
-        font-size: 2em;
-    }
-}
