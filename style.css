@@ -14,14 +14,35 @@ footer {
 
 /* ****************** HEADER ****************** */
 
-.collapse {
-    margin-left: 5%;
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
-.nav-item {
-    color: darkslateblue;
-    font-weight: bold;
-    padding-right: 45px;
+header {
+    width: 100%;
+    height: 60px;
+    background-color: #17a2b8;
+    display: flex;
+    align-items: center;
+}
+
+header a {
+    color: black;
+    margin: 0 15px;
+    font-size: 1em;
+    flex-direction: row;
+    position: relative;
+}
+
+header .icon {
+    display: none;
+}
+
+.collapse {
+    margin-left: 5%;
 }
 
 h1 {
@@ -283,11 +304,37 @@ footer {
 
 /* ************************ MEDIA QUERIES ************************** */
 
+@media screen and (max-width: 600px) {
+    header a {
+        display: none;
+        color: black;
+    }
+    header .icon {
+        background-color: #17a2b8;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    header.navresponsive a {
+        display: block;
+        padding: 5px 0;
+        width: 100%;
+    }
+    header {
+        flex-direction: column;
+        min-height: 70px;
+        height: 100%;
+        align-items: flex-start;
+    }
+}
+
 @media screen and (min-width: 600px) {
     #rightPart {
-        display: flex;
+        display: block;
         flex-wrap: wrap;
         flex-direction: row;
+        width: 100%;
     }
     #rightPart h2 {
         display: none;

@@ -5,8 +5,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi" />
+    <meta name=" viewport " content=" width=device-width " />
+    <meta name=" viewport " content=" width=device-width, target-densitydpi=device-dpi " />
+
+
 
 
     <link rel="stylesheet" href="./style.css" />
@@ -16,31 +18,20 @@
 </head>
 
 <body>
-    <header>
+    <header id="navbar" class="nav">
+        <img src="./media/Image3.jpg" alt="" style="width: 50px;">
+        <div>
+            <a href="blog.html"> Blog </a>
+            <a href="faireUnDon.html"> Faire un Don </a>
+            <a href="Contact.html"> Contact </a>
 
-        <nav class="navbar navbar-expand-sm bg-info navbar-light">
-            <img src="./media/Image3.jpg" alt="" style="width: 40px;">
-            <a class="navbar-brand" href="#"> </a>
+        </div>
 
+        <a class="icon" onclick="myFunction()">&#9776;</a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-
-                <ul class="navbar-nav">
-                    <li class="élément de navigation"> <a class="nav-link" href="blog.html"> Blog </a> </li>
-                    <li class="élément de navigation"> <a class="nav-link" href="faireUnDon.html"> Faire un Don </a> </li>
-                    <li class="élément de navigation"> <a class="nav-link" href="Contact.html"> Contact </a> </li>
-                </ul>
-            </div>
-        </nav>
-
-
-        <h1>SPA <br> Société Protectrice des Animaux</h1>
     </header>
+
+    <h1>SPA <br> Société Protectrice des Animaux</h1>
     <main>
         <div class="container">
             <div class="row">
@@ -146,7 +137,7 @@
     </footer>
 
     <script src="jquery.min.js "></script>
-    <script type="text/javascript " src="script.js "></script>
+    <script type="text/javascript " src="script.js"></script>
 </body>
 
 </html>
