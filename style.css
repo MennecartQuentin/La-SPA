@@ -5,7 +5,6 @@ html {
 h2,
 h3,
 h4,
-.nav-item,
 #transition,
 footer {
     text-align: center;
@@ -27,6 +26,7 @@ header {
     background-color: #17a2b8;
     display: flex;
     align-items: center;
+    flex-direction: row;
 }
 
 header a {
@@ -214,33 +214,6 @@ h1 {
 }
 
 
-/* ****************************** NEWSLETTER ***************************** */
-
-#newsletter {
-    background: url(./media/nwletter.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    height: 350px;
-    width: 70%;
-    min-width: 450px;
-    margin: 0 auto;
-    border-radius: 50%;
-    margin-bottom: 70px;
-}
-
-#newsletter h4 {
-    margin-top: 15px;
-    padding: 100px 0 20px 0;
-    font-size: 2em;
-    text-shadow: 1px 1px 0 rgb(252, 143, 0);
-}
-
-#newsletter .input-group {
-    width: 40%;
-    min-width: 350px;
-    margin: 0 auto;
-}
-
-
 /* ****************************** FOOTER *************************** */
 
 footer {
@@ -310,16 +283,16 @@ footer {
         color: black;
     }
     header .icon {
-        background-color: #17a2b8;
         display: block;
-        position: relative;
+        position: absolute;
         cursor: pointer;
         font-size: 30px;
+        right: 0;
+        top: 10px;
     }
     header.navresponsive a {
         display: block;
         padding: 5px 0;
-        width: 100%;
     }
     header {
         flex-direction: column;
@@ -357,10 +330,6 @@ footer {
         max-width: 150px;
         margin-top: 10px;
     }
-    #newsletter h4 {
-        padding: 50px 0;
-        font-size: 2em;
-    }
     #part {
         display: flex;
     }
@@ -393,14 +362,6 @@ footer {
     }
     .tips h4 {
         font-size: 0.9em;
-    }
-    #newsletter {
-        width: 140px;
-        margin-top: 40px;
-    }
-    #newsletter h4 {
-        padding: 30px 0;
-        font-size: 1.5em;
     }
 }
 
